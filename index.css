@@ -1,5 +1,6 @@
 body {
-	background-color: #3366ff;
+	/*background-color: #3366ff;*/
+	background: url(../../BackgroundImage.png);
 }
 * {
 	margin: 0px;
@@ -29,6 +30,10 @@ h1{
 	text-align: center;
 	font-size: 36px;
 	color: white;
+}
+h2{
+	text-align: center;
+	
 }
 #toolbox{
 	display: flex;
