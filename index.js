@@ -16,13 +16,13 @@ function processData(data) {
     $('#searchResp').empty();
     $('#rec').show();
     var entries = data.hourly_forecast;
-    var feels = entries[0].feelslike.english;
+    var feels = parseInt(entries[0].feelslike.english);
     var feelsMin = feels;
     var rain = false;
     var snow = false;
     for (var i = 1; i < 12; i++) {
         if (feelsMin > entries[i].feelslike.english) {
-            feelsMin = entries[i].feelslike.english;
+            feelsMin = parseInt(entries[i].feelslike.english);
         }
 
         if (entries[i].condition.toLowerCase().includes("rain")) {
