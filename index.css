@@ -13,6 +13,8 @@
 * {
 	margin: 0px;
 	padding: 0px;
+	font-family: "Elephant Regular";
+	font-style: italic;
 }
 .clearfix{
 	clear: both;
