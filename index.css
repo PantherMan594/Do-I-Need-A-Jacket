@@ -1,4 +1,27 @@
-*{
+body {
+	background-color: blue;
+}
+
+* {
 	margin: 0px;
 	padding: 0px;
+}
+
+h3 {
+	font-size: 72px;
+	color: white;
+	text-align: center;
+	padding: 200px 20px;
+	margin-right: 50px;
+}
+
+p {
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	margin-left: 50px;
+}
+
+a {
+	color: white;
 }
