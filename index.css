@@ -24,6 +24,8 @@ h1{
 }
 #rec{
 	padding: 8px;
+	text-align: center;
+	
 }
 #toolbox{
 	display: flex;
