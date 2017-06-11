@@ -38,6 +38,7 @@ h1{
 h2{
 	text-align: center;
 	color: #0033cc;
+	padding: 5px;
 }
 #toolbox{
 	display: flex;
