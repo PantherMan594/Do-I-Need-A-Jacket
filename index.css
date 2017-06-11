@@ -29,7 +29,7 @@ h1{
 #toolbox{
 	display: flex;
 	align-content: center;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 }
 #searchBox{
