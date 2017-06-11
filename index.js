@@ -34,28 +34,28 @@ function processData(data) {
     }
 
     var simp = 'No';
-    var rec = 'you don\'t need a jacket';
+    var rec = 'You don\'t need a jacket';
     if (rain || snow) {
         simp = 'Yes';
     }
     if (snow) {
-        rec = 'you should wear a coat today, it\'s snowing';
+        rec = 'You should wear a coat today, it\'s snowing';
     } else if (rain) {
         if (feelsMin < coat) {
-            rec = 'it\'s cold and raining out today, you need a coat';
+            rec = 'It\'s cold and raining out today, you need a coat';
         } else {
-            rec = 'you should wear a jacket today, it\'s raining';
+            rec = 'You should wear a jacket today, it\'s raining';
         }
     } else {
         if (feelsMin < coat) {
             simp = 'Yes';
-            rec = 'it\'s cold out today, you need a coat';
+            rec = 'It\'s cold out today, you need a coat';
         } else if (feelsMin < jacket) {
             simp = 'Yes';
-            rec = 'you should wear a jacket today';
+            rec = 'You should wear a jacket today';
         } else if (feelsMin < sweater) {
             simp = 'No';
-            rec = 'you only need a sweater';
+            rec = 'You only need a sweater';
         }
     }    
     $('title').text('Do I Need a Jacket? ' + simp + '.');
