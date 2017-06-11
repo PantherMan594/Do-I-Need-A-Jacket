@@ -1,6 +1,6 @@
 # Do I Need a Jacket?
 
-doineedajacket.tech (Domain Name doesn't redirect properly)
+doineedajacket.tech (Domain Name will redirect properly in 2-3 hours)
 
 See the website live at https://pantherman594.github.io/Do-I-Need-A-Jacket/index.html.
 
