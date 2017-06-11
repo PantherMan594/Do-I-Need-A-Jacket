@@ -20,8 +20,8 @@ body {
 	float: right;
 }
 ul{
-	padding: 8px;
-	text-decoration: none;
+	padding: 16px;
+	list-style: none;
 }
 h1{
 	text-align: center;
