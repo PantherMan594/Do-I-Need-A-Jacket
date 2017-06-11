@@ -43,7 +43,7 @@ function processData(data) {
 function search() {
     var query = $('#searchField').val();
     $('#rec').hide();
-    $('body').append("<script src=\"http://autocomplete.wunderground.com/aq?cb=processQuery&query=" + query + "\"></script>");
+    $('body').append("<script src=\"https://autocomplete.wunderground.com/aq?cb=processQuery&query=" + query + "\"></script>");
     return false;
 }
 
