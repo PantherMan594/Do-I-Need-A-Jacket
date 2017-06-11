@@ -1,5 +1,5 @@
 body {
-	background-color: blue;
+	background-color: #3366ff;
 }
 
 * {
@@ -7,19 +7,26 @@ body {
 	padding: 0px;
 }
 
-h3 {
+#wrapper{
+	text-align: center;
+}
+#info{
+	width: 80%;
+	margin: auto;
+}
+.clearfix{
+	clear: both;
+}
+h1 {
+	float: left;
 	font-size: 72px;
 	color: white;
-	text-align: center;
-	padding: 200px 20px;
-	margin-right: 50px;
 }
 
 p {
-	font-size: 48px;
+	float: right;
+	font-size: 24px;
 	color: white;
-	text-align: center;
-	margin-left: 50px;
 }
 
 a {

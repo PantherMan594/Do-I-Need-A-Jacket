@@ -11,8 +11,17 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+	<!-- Background Image -->
+	<!-- Full Screen Wrapper -->
     <div id="wrapper">
-        <h3>Do I need a jacket?</h3>
+        <div id="info">
+			<h1>Do I need a jacket?</h1>
+			<div id="rec">
+				<p id="simpResp">We cannot retrieve the information!<!-- Placeholder for simple response --></p>
+				<p id="longResp">We cannot retrieve the information!<!-- Placeholder for long response --></p>
+			</div>
+			<div class="clearfix"/>
+		</div>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <div id="settings" style="display: none">
             <form name="settings" onsubmit="return settings()">
@@ -31,10 +40,6 @@
         <div id="searchResp">
             <ul>
             </ul>
-        </div>
-        <div id="rec" style="display: none">
-            <p id="simpResp"></p>
-            <p id="longResp"></p>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
