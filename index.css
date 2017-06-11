@@ -5,32 +5,34 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-#wrapper{
-	text-align: center;
-}
-#info{
-	width: 80%;
-	margin: auto;
-}
-#rec{
-	float: right;
-}
 .clearfix{
 	clear: both;
 }
-h1 {
-	float: left;
-	font-size: 72px;
-	color: white;
+#wrapper{
+	width: 80%;
 }
-p {
-	font-size: 24px;
-	color: white;
+#toolbar{
+	overflow: hidden;
 }
-a {
-	color: white;
+#sign-in{
+	float: right;
 }
-
+h1{
+	text-align: center;
+	margin: auto 12px;
+}
+#rec{
+	padding: 8px;
+}
+#toolbox{
+	display: flex;
+}
+#searchBox{
+	
+}
+#settings{
+	
+}
 .abcRioButton {
 	background-color: blue;
 	color: white;

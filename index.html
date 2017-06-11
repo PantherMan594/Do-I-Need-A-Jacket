@@ -13,36 +13,44 @@
     <!-- Background Image -->
     <!-- Full Screen Wrapper -->
     <div id="wrapper">
-        <div id="info">
-            <h1>Do I need a jacket?</h1>
-            <div id="rec">
-                <p id="simpResp"><!-- Placeholder for simple response --></p>
-                <p id="longResp"><!-- Placeholder for long response --></p>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
-        <div id="settings" style="display: none">
-            <form name="settingsForm" onsubmit="return settings()">
-                Coat: <input type="number" id="coat">
-                <br />
-                Jacket: <input type="number" id="jacket">
-                <br />
-                Sweater: <input type="number" id="sweater">
-                <br />
-                <input type="submit" value="Set" id="settingsBtn">
-            </form>
-        </div>
-        <div id="search">
-            <form name="searchForm" onsubmit="return search()">
-                <input type="text" id="searchField">
-                <input type="submit" value="Search" id="searchBtn">
-            </form>
-        </div>
-        <div id="searchResp">
-            <ul>
-            </ul>
-        </div>
+		<div id="toolbar">
+			<!-- Sign In Button -->
+			<div id="sign-in" class="g-signin2" data-onsuccess="onSignIn"></div>
+			<!-- Clear Float Fix -->
+			<div class="clearfix"></div>
+		</div>
+		<h1>Do I need a jacket?</h1>
+		<!-- Results & Recommendation -->
+		<div id="rec">
+			<p id="simpResp"><!-- Placeholder for simple response --></p>
+			<p id="longResp"><!-- Placeholder for long response --></p>
+		</div>
+		<div id="toolbox"> <!-- Horizontal Flexbox -->
+			<div id="searchBox">
+				<div id="search">
+					<form name="searchForm" onsubmit="return search()">
+						<input type="text" id="searchField">
+						<input type="submit" value="Search" id="searchBtn">
+					</form>
+				</div>
+				<div id="searchResp">
+					<ul>
+						<!-- Placeholder for Search Responses -->
+					</ul>
+				</div>
+			</div>
+			<div id="settings" style="display: none">
+				<form name="settingsForm" onsubmit="return settings()">
+					Coat: <input type="number" id="coat">
+					<br />
+					Jacket: <input type="number" id="jacket">
+					<br />
+					Sweater: <input type="number" id="sweater">
+					<br />
+					<input type="submit" value="Set" id="settingsBtn">
+				</form>
+			</div>
+		</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="index.js"></script>
