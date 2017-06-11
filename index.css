@@ -1,6 +1,7 @@
 body {
 	/*background-color: #3366ff;*/
-	background: url(./BackgroundImage.png) repeat fixed center;
+	background: url(./BackgroundImage.png) no-repeat center center fixed;
+	background-size: cover;
 }
 * {
 	margin: 0px;
