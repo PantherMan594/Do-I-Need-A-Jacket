@@ -57,7 +57,7 @@ function processData(data) {
             simp = 'No';
             rec = 'You only need a sweater';
         }
-    }    
+    }
     $('title').text('Do I Need a Jacket? ' + simp + '.');
     $('#simpResp').text(simp + '. ');
     $('#longResp').text(rec + '. The coldest it will feel today is ' + feelsMin + ' F.');
@@ -100,11 +100,11 @@ function login(data) {
         coat = data[0];
         jacket = data[1];
         sweater = data[2];
-
-        $('#coat').val(coat);
-        $('#jacket').val(jacket);
-        $('#sweater').val(sweater);
     }
+
+    $('#coat').val(coat);
+    $('#jacket').val(jacket);
+    $('#sweater').val(sweater);
 }
 
 function settings() {
