@@ -20,12 +20,11 @@ body {
 }
 h1{
 	text-align: center;
-	margin: auto 12px;
+	margin: auto 32px;
 }
 #rec{
 	padding: 8px;
 	text-align: center;
-	
 }
 #toolbox{
 	display: flex;
