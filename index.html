@@ -7,37 +7,37 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="317906158415-pcibnr8v4nugc4lacieoj48h7t9f3mv9.apps.googleusercontent.com">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-	<link rel="stylesheet" type="text/css" href="index.css">
+    <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<!-- Background Image -->
-	<!-- Full Screen Wrapper -->
+    <!-- Background Image -->
+    <!-- Full Screen Wrapper -->
     <div id="wrapper">
         <div id="info">
-			<h1>Do I need a jacket?</h1>
-			<div id="rec">
-				<p id="simpResp">We cannot retrieve the information!<!-- Placeholder for simple response --></p>
-				<p id="longResp">We cannot retrieve the information!<!-- Placeholder for long response --></p>
-			</div>
-			<div class="clearfix"/>
-		</div>
+            <h1>Do I need a jacket?</h1>
+            <div id="rec">
+                <p id="simpResp">We cannot retrieve the information!<!-- Placeholder for simple response --></p>
+                <p id="longResp">We cannot retrieve the information!<!-- Placeholder for long response --></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <div id="settings" style="display: none">
-            <form name="settings" onsubmit="return settings()">
+            <form name="settingsForm" onsubmit="return settings()">
                 Coat: <input type="number" id="coat">
                 <br />
                 Jacket: <input type="number" id="jacket">
                 <br />
                 Sweater: <input type="number" id="sweater">
                 <br />
-                <input type="submit" value="Set" id="btn">
+                <input type="submit" value="Set" id="settingsBtn">
             </form>
         </div>
         <div id="search">
-            <form name="search" onsubmit="return search()">
+            <form name="searchForm" onsubmit="return search()">
                 <input type="text" id="searchField">
-                <input type="submit" value="Search" id="btn">
+                <input type="submit" value="Search" id="searchBtn">
             </form>
         </div>
         <div id="searchResp">
