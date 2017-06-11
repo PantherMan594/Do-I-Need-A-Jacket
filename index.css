@@ -33,7 +33,7 @@ h1{
 }
 h2{
 	text-align: center;
-	
+	color: #0033cc;
 }
 #toolbox{
 	display: flex;
@@ -48,6 +48,6 @@ h2{
 	padding: 50px;
 }
 .abcRioButton {
-	background-color: blue;
-	color: #0033cc;
+	background-color: #3366ff;
+	color: white;
 }
