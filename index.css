@@ -22,14 +22,14 @@ body {
 h1{
 	text-align: center;
 	margin: auto 32px;
-	color: white;
+	color: #0033cc;
 	font-size: 72px;
 }
 #rec{
 	padding: 8px;
 	text-align: center;
 	font-size: 36px;
-	color: white;
+	color: #0033cc;
 }
 h2{
 	text-align: center;
@@ -49,5 +49,5 @@ h2{
 }
 .abcRioButton {
 	background-color: blue;
-	color: white;
+	color: #0033cc;
 }
