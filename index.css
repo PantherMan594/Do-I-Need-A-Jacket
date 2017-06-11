@@ -14,7 +14,7 @@ body {
 #toolbar{
 	overflow: hidden;
 }
-.signinButton{
+#signInContainer{
 	float: right;
 }
 h1{
