@@ -21,10 +21,14 @@ body {
 h1{
 	text-align: center;
 	margin: auto 32px;
+	color: white;
+	font-size: 72px;
 }
 #rec{
 	padding: 8px;
 	text-align: center;
+	font-size: 36px;
+	color: white;
 }
 #toolbox{
 	display: flex;
