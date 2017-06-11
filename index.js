@@ -116,4 +116,5 @@ function settings() {
         url: 'https://pantherman594.com/jacket.php?id=' + profile.getId() + '&coat=' + $('#coat').val() + '&jacket=' + $('#jacket').val() + '&sweater=' + $('#sweater').val(),
         success: function(data) {login(data);}
     });
+    return false;
 }
