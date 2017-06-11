@@ -1,6 +1,6 @@
 # Do I Need a Jacket?
 
-doineedajacket.tech (Domain Name doesn't redirect)
+doineedajacket.tech (Domain Name doesn't redirect properly)
 
 See the website live at https://pantherman594.github.io/Do-I-Need-A-Jacket/index.html.
 
