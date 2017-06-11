@@ -1,22 +1,21 @@
-var location = 02135;
-var unit = 'f';
+var queryResp = '/q/zmw:02108.1.99999';
 
 $(document).ready(function () {
     $.ajax({
         type: 'GET',
-        url: 'http://wxdata.weather.com/wxdata/weather/local/02135?cc=*&unit=' + unit,
-        dataType: 'xml',
+        url: 'http://api.wunderground.com/api/dba29ab1640cac5b/hourly' + queryResp + '.json',
+        dataType: 'json',
         success: function(data) {processData(data);}
-	});
+    });
 });
 
 function processData(data) {
-    $(data).find('weather').each(function () {
-        $(this).find('cc').each(function () {
-            $(this).find('flik').each(function () {
-                var temp = $(this).text();
-                $('#temp').text(temp);
-            })
-        })
-    })
+    var entries = data.hourly_forecast;
+    var temp = entries[0].temp.english;
+    var feels = entries[0].feelslike.english;
+    $('#temp').text(temp);
+    $('#feels').text(feels);
+    /*for (var i = 0; i < entries.length; i++) {
+
+    }*/
 }
