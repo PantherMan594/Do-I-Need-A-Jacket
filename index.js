@@ -34,5 +34,5 @@ function processData(data) {
         rec = 'you only need a sweater';
     }
     $('title').text('Do I Need a Jacket? ' + simp + '.');
-    $('#rec').text(simp + ', ' + rec + '. The coldest it will feel today is ' + feelsMin + ' F.');
+    $('#rec').text(simp + ', ' + rec + '.' + "</br>"+'The coldest it will feel today is ' + feelsMin + ' F.');
 }
