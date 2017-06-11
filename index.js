@@ -100,6 +100,7 @@ function login(data) {
         coat = data[0];
         jacket = data[1];
         sweater = data[2];
+    $('#settings').addClass("bottom");
     }
 
     $('#coat').val(coat);
@@ -108,6 +109,7 @@ function login(data) {
 }
 
 function settings() {
+    $('#settings').addClass("bottom");
     if (!$('#coat').val()) $('#coat').val(coat);
     if (!$('#jacket').val()) $('#jacket').val(jacket);
     if (!$('#sweater').val()) $('#sweater').val(sweater);
