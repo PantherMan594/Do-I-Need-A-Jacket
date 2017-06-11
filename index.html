@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <head>
     <title>Do I Need a Jacket?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="317906158415-pcibnr8v4nugc4lacieoj48h7t9f3mv9.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <div id="wrapper">
         <h3>Do I need a jacket?</h3>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <div id="search">
             <form onsubmit="return search()">
                 <input type="text" id="searchField">
