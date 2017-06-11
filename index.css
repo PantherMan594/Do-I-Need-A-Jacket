@@ -34,10 +34,10 @@ h1{
 	justify-content: center;
 }
 #searchBox{
-	
+	padding: 5px;
 }
 #settings{
-	
+	padding: 5px;
 }
 .abcRioButton {
 	background-color: blue;
