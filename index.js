@@ -3,6 +3,7 @@ var jacket = 45;
 var sweater = 60;
 var profile;
 
+/* Gets Info By Location - Uses Wunderground API */
 function query(location) {
     $.ajax({
         type: 'GET',
@@ -12,6 +13,7 @@ function query(location) {
     });
 }
 
+/* Recommendation logic based off of data retrieved */
 function processData(data) {
     $('#searchResp').empty();
     $('#rec').show();
@@ -63,6 +65,7 @@ function processData(data) {
     $('#longResp').text(rec + '. The coldest it will feel today is ' + feelsMin + ' F.');
 }
 
+/* Wunderground search for location*/
 function search() {
     var query = $('#searchField').val();
     $('#rec').hide();
@@ -100,7 +103,7 @@ function login(data) {
         coat = data[0];
         jacket = data[1];
         sweater = data[2];
-    $('#settings').addClass("bottom");
+		$('#settings').addClass("bottom"); /* Not in use - Obsolete */
     }
 
     $('#coat').val(coat);
@@ -110,6 +113,7 @@ function login(data) {
 
 function settings() {
     $('#settings').addClass("bottom");
+	/* Default Variables if not signed in */
     if (!$('#coat').val()) $('#coat').val(coat);
     if (!$('#jacket').val()) $('#jacket').val(jacket);
     if (!$('#sweater').val()) $('#sweater').val(sweater);
@@ -118,6 +122,6 @@ function settings() {
         url: 'https://pantherman594.com/jacket.php?id=' + profile.getId() + '&coat=' + $('#coat').val() + '&jacket=' + $('#jacket').val() + '&sweater=' + $('#sweater').val(),
         success: function(data) {login(data);}
     });
-    alert("Settings changed!");
+    alert("Settings changed!"); /* Alerts User of Sign In */
     return false;
 }
