@@ -60,7 +60,13 @@ h2{
 #settings{
 	padding: 50px;
 }
+#settingsBtn{
+	width: 100%;
+}
 .abcRioButton {
 	background-color: #3366ff;
 	color: white;
+}
+input{
+	margin-top: 3px;
 }
